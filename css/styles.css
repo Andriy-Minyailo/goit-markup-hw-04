@@ -277,23 +277,31 @@ body {
   fill: currentColor;
 }
 .social-link:hover,
-.social-link:hover {
+.social-link:focus {
   color: var(--primary-backgroun-color);
   background-color: var(--accent-color);
 }
 .list-client {
-  width: 170px;
-  height: 92px;
+  width: calc((100%-150px) / 6);
+}
+.list-client:not(:last-child) {
+  margin-right: var(--margin30px);
 }
 .link-client {
   display: flex;
   justify-content: center;
   align-items: center;
-  
+  padding: 16px 32px;
   width: 100%;
   height: 100%;
-  border: 1px solid #000000;
-  color: #000000;
+  color: #afb1b8;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+.link-client:hover,
+.link-client:focus {
+  color: var(--accent-color);
+  border-color: var(--accent-color);
 }
 .icon-client {
   fill: currentColor;
@@ -303,14 +311,19 @@ body {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-
+.footer-flex {
+  display: flex;
+}
 .logo-first .logo-footer-end {
   color: var(--primary-backgroun-color);
 }
 .address {
-  margin-top: 28px;
+  margin-top: 20px;
   font-style: normal;
   color: var(--primary-backgroun-color);
+}
+.lists-footer > li:not(:last-child) {
+  margin-bottom: 9px;
 }
 .lists-footer > li:hover,
 .lists-footer > li:focus {
@@ -319,7 +332,42 @@ body {
 .footer-contact {
   color: rgba(255, 255, 255, 0.6);
 }
-/* портфоліо */
+.footer-social-container {
+  margin-left: 70px;
+  padding-top: 12px;
+}
+.footer-social-titel {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--primary-backgroun-color);
+}
+
+.list-footer-social {
+  width: 44px;
+  height: 44px;
+}
+.list-footer-social:not(:last-child) {
+  margin-right: 10px;
+}
+.link-footer-social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  color: var(--primary-backgroun-color);
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.link-footer-social:hover,
+.link-footer-social:focus {
+  background-color: var(--accent-color);
+}
+
+/* _____________________портфоліо */
 .lists-filter {
   justify-content: center;
   margin-bottom: 50px;
@@ -344,6 +392,8 @@ body {
 .button-filter:focus {
   color: var(--primary-backgroun-color);
   background-color: var(--accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .portfolio-lists {
   flex-wrap: wrap;
@@ -357,6 +407,15 @@ body {
 .portfolio-list {
   background-color: var(--primary-backgroun-color);
   width: calc((100% - 60px) / 3);
+}
+.link-portfolio {
+  display: block;
+  text-decoration: none;
+}
+.link-portfolio:hover,
+.link-portfolio:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .name-project {
   padding: 20px 24px;
