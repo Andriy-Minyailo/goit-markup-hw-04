@@ -121,7 +121,10 @@ body {
     url(../images/fon.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: contain;
+  background-size: cover;
+  margin: 0 auto;
+  max-width: 1600px;
+  height: 600px;
   background-color: var(--hero-footer-backgroun-color);
 }
 .hero .container {
